@@ -18,7 +18,7 @@ Feature: US1003 BackGround kullanarak tekrarlardan kurtulur
 
 
   Scenario: TC07 Amazon Samsung Testi
-    
+
     When Samsung icin arama yapar
     Then Arama sonuclarinin Samsung icerdigini test eder
     And Sayfayi kapatir
