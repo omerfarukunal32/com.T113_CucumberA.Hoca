@@ -9,9 +9,11 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features", // virgulu unutma, sonda yok
         glue = "stepdefinitions",
-        tags = "@smoke and @regression",  // bu ifadeyi ilgili yerlere yazdik
+        tags = "@wip",
+        //tags = "@smoke and @regression",  // bu ifadeyi ilgili yerlere yazdik
                                           // "@smoke or  @regression"
         dryRun = false
+        // dryRun = true
 )
 
 public class Runner {

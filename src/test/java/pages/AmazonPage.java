@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class AmazonPage {
+public class  AmazonPage {
 
     // Page class'lari surekli kullandigimiz locate islemleri
     // ve varsa login gibi kucuk islevleri iceren methodlar barindirir
@@ -30,6 +30,12 @@ public class AmazonPage {
 
     @FindBy(xpath = "//*[@class='a-color-state a-text-bold']")
     public WebElement aramaSonucuElementi;
+
+    @FindBy (xpath = "//*[@data-image-index='1']")
+    public WebElement ilkUrunElementi;
+
+    @FindBy (xpath = "//span[@id='productTitle']")
+    public WebElement ilkUrunIsimElementi;
 
 
 }
