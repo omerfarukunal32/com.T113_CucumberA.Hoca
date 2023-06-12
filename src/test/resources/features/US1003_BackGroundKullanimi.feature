@@ -10,6 +10,7 @@ Feature: US1003 BackGround kullanarak tekrarlardan kurtulur
     And Sayfayi kapatir
 
 
+  @smoke
   Scenario: TC06 Amazon Java Testi
 
     When Java icin arama yapar
@@ -17,6 +18,7 @@ Feature: US1003 BackGround kullanarak tekrarlardan kurtulur
     And Sayfayi kapatir
 
 
+  @regression
   Scenario: TC07 Amazon Samsung Testi
 
     When Samsung icin arama yapar
