@@ -66,9 +66,8 @@ public class AmazonStepDefinitions {
         Assert.assertTrue(actualTitle.contains(expectedIcerik));
     }
 
-    @Given("Kullanici {string} anasayfaya gider")
+    @Given("Kullanici {string} anasayfaya gider")  // Parametre kullanimi
     public void kullaniciAnasayfayaGider(String istenenUrl) { // amazonUrl, wiseUrl, facebookUrl
-
         Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
     }
 
@@ -76,6 +75,7 @@ public class AmazonStepDefinitions {
     public void icinAramaYapar(String aranacakKelime) {
         amazonPage.aramaKutusu.sendKeys(aranacakKelime+Keys.ENTER);
     }
+    // Feature'da aranacak ifadede tirnak varsa, "amayonUrl\"" seklinde yazilir ve ters slash karakteri kullanilir
 
     @Then("Arama sonuclarinin {string} icerdigini test eder")
     public void aramaSonuclarininIcerdiginiTestEder(String expectedIcerik) {
@@ -83,7 +83,7 @@ public class AmazonStepDefinitions {
         Assert.assertTrue(actualAramaSonucu.contains(expectedIcerik));
     }
 
-    @And("{int} saniye bekler")
+    @And("{int} saniye bekler") // sayiyi tirnak icine almadik ama Java onu parametre olarak kabul etti
     public void saniyeBekler(int beklenecekSaniye) {
 
         // cucumber sayi yazildiginda direk parametre olarak kabul eder
