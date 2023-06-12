@@ -9,7 +9,7 @@ Feature: US1004 Steplerde parametre kullanilabilmeli
     And Sayfayi kapatir
 
 
-  @regression
+  @regression @ss
   Scenario: TC09 Amazon Java Testi
 
     Given Kullanici "amazonUrl" anasayfaya gider

@@ -7,13 +7,17 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:target/cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
         features = "src/test/resources/features", // virgulu unutma, sonda yok
         glue = "stepdefinitions",
-        tags = "@wip",
+        tags = "@ss",
         //tags = "@smoke and @regression",  // bu ifadeyi ilgili yerlere yazdik
                                           // "@smoke or  @regression"
         dryRun = false
-        // dryRun = true
+        //dryRun = true
 )
 
 public class Runner {
