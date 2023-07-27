@@ -70,7 +70,8 @@ public class Runner {
                     Runner Class'da dryRun = true yapip
                     Runner Class'i calistiririz
 
-                    dryRun = true    dendiginde
+                    dryRun = true
+                    dendiginde
                     Cucumber testleri calistirmaz, sadece eksik adim var mi diye kontrol eder
                     eksik adim yoksa Test PASSED yazar
 
